@@ -1,4 +1,4 @@
-from alembic.autogenerate import render
+
 from flask import Flask, render_template
 
 
@@ -12,4 +12,9 @@ def create_app():
     @app.route('/ysb')
     def ysb():
         return render_template('ysb.html')
+
+    @app.route('/cbi')
+    def cbi():
+        return render_template('cbi.html')
     return app
+
